@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/drawable/ic_round_arrow_back_ios_24.xml" value="0.129" />
+        <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_dashboard.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_header.xml" value="0.1962962962962963" />
         <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_log_in.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_manage_account.xml" value="0.1962962962962963" />
         <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/activity_splash.xml" value="0.10989583333333333" />
       </map>
     </option>

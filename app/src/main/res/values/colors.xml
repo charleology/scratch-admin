@@ -24,6 +24,7 @@
     <color name="red">#e6080B</color>
     <color name="pastelGreen">#55ab55</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="searchBar">#f282a8</color>
 
     <!-- much more custome colors DO NOT REMOVE OR CHANGE -->
     <color name="splashBackPink">#fb528b</color>

@@ -31,6 +31,7 @@ public class LogIn extends AppCompatActivity {
         loginBtn = (Button) findViewById(R.id.loginBtn);
         forgotPasswordTv = (TextView) findViewById(R.id.forgotPasswordTv);
 
+
         //for transpa status bar
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true);
