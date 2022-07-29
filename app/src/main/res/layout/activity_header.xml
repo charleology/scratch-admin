@@ -7,7 +7,7 @@
     android:background="@color/nighty"
     android:orientation="horizontal"
     android:paddingHorizontal="15dp"
-    android:paddingVertical="10dp"
+    android:paddingVertical="8dp"
     tools:context=".Header"
     android:weightSum="2"
     android:gravity="center"

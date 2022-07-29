@@ -43,7 +43,7 @@
 
     <style name="search_style">
         <item name="android:background">@color/searchBar</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:hint">Search</item>
         <item name="android:paddingStart">15dp</item>
         <item name="android:paddingEnd">15dp</item>
