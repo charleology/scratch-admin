@@ -28,10 +28,10 @@
             android:src="@drawable/admin_avatar" />
 
         <TextView
-            android:gravity="end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:gravity="end"
             android:text="Admin Dashboard"
             android:textColor="@color/gray"
             android:textSize="21sp"
@@ -294,6 +294,7 @@
                             android:textColor="@color/gray"
                             android:textSize="18sp"
                             android:textStyle="bold" />
+
 
                         <TextView
                             android:id="@+id/logoutTv"
