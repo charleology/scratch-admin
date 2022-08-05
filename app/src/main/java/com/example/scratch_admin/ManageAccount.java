@@ -61,7 +61,7 @@ public class ManageAccount extends AppCompatActivity {
         accountCreateIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ManageAccount.this, CreateAdminAccount.class);
+                Intent i = new Intent(ManageAccount.this, UserInformation.class);
                 startActivity(i);
             }
         });
