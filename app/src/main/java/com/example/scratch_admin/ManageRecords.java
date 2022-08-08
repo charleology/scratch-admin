@@ -1,7 +1,10 @@
 package com.example.scratch_admin;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,6 +21,7 @@ public class ManageRecords extends AppCompatActivity {
     ImageView recordsBackIv;
     LinearLayout recordsAddTile, recordsCreateReportTile;
     MaterialCardView addRecordMaterial, createReportMaterial;
+    RecyclerView recordsRecycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,29 +39,28 @@ public class ManageRecords extends AppCompatActivity {
         recordsCreateReportTile = (LinearLayout) findViewById(R.id.recordsCreateReportTile);
         addRecordMaterial = (MaterialCardView) findViewById(R.id.addRecordMaterial);
         createReportMaterial = (MaterialCardView) findViewById(R.id.createReportMaterial);
+        recordsRecycler = (RecyclerView) findViewById(R.id.recordsRecycler);
 
-        recordsBackIv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        recordsRecycler.setHasFixedSize(true);
+        recordsRecycler.setLayoutManager(new LinearLayoutManager(ManageRecords.this));
 
-        recordsAddTile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //change color of tile when pressed
-                addRecordMaterial.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.lightgray)));
-            }
-        });
+        //Array for accounts
+        PetRecordsData[] petRecordsData = new PetRecordsData[]{
+                new PetRecordsData("Male Dog", "Young", "Medium", "Brown, Cream", R.drawable.sample1),
+                new PetRecordsData("Female Dog", "Old", "Small", "Pink, Cream", R.drawable.sample2),
+                new PetRecordsData("Male Dog", "Young", "Large", "Brown, Black", R.drawable.sample3),
+                new PetRecordsData("Male Cat", "Young", "Small", "Cookies, Cream", R.drawable.sample4),
+                new PetRecordsData("Female Cat", "Young", "Gigantic", "Blue, Cream", R.drawable.sample5),
+                new PetRecordsData("Male Dog", "Young", "Medium", "Brown, Cream", R.drawable.sample1),
+                new PetRecordsData("Female Dog", "Old", "Small", "Pink, Cream", R.drawable.sample2),
+                new PetRecordsData("Male Dog", "Young", "Large", "Brown, Black", R.drawable.sample3),
+                new PetRecordsData("Male Cat", "Young", "Small", "Cookies, Cream", R.drawable.sample4),
+                new PetRecordsData("Female Cat", "Young", "Gigantic", "Blue, Cream", R.drawable.sample5)
+        };
 
-        recordsCreateReportTile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //change color of tile when pressed
-                createReportMaterial.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.lightgray)));
-            }
-        });
+        RecordsAdapter recordsAdapter = new RecordsAdapter(petRecordsData, ManageRecords.this);
+        recordsRecycler.setAdapter(recordsAdapter);
+
     }
 
     public void back(View view){
@@ -68,5 +71,10 @@ public class ManageRecords extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         this.finish();
+    }
+
+    public void onAddRecordPressed(View view){
+        Intent i = new Intent(ManageRecords.this, AddRecord.class);
+        startActivity(i);
     }
 }

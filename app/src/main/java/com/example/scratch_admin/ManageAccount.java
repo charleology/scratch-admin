@@ -76,4 +76,9 @@ public class ManageAccount extends AppCompatActivity {
         super.onBackPressed();
         this.finish();
     }
+
+    public void onCreateAccountPressed(View view){
+        Intent i = new Intent (ManageAccount.this, CreateAdminAccount.class);
+        startActivity(i);
+    }
 }
