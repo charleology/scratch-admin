@@ -74,7 +74,7 @@ public class ManageRecords extends AppCompatActivity {
     }
 
     public void onAddRecordPressed(View view){
-        Intent i = new Intent(ManageRecords.this, EditRecord.class);
+        Intent i = new Intent(ManageRecords.this, AddRecord.class);
         startActivity(i);
     }
 }
