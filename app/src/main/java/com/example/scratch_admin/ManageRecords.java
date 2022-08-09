@@ -74,4 +74,9 @@ public class ManageRecords extends AppCompatActivity {
         Intent i = new Intent(ManageRecords.this, AddRecord.class);
         startActivity(i);
     }
+
+    public void onCreateReportPressed(View view){
+        Intent i = new Intent(ManageRecords.this,CreateReport.class);
+        startActivity(i);
+    }
 }
