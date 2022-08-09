@@ -20,7 +20,6 @@ public class ManageRecords extends AppCompatActivity {
 
     ImageView recordsBackIv;
     LinearLayout recordsAddTile, recordsCreateReportTile;
-    MaterialCardView addRecordMaterial, createReportMaterial;
     RecyclerView recordsRecycler;
 
     @Override
@@ -37,8 +36,6 @@ public class ManageRecords extends AppCompatActivity {
         recordsBackIv = (ImageView) findViewById(R.id.recordsBackIv);
         recordsAddTile = (LinearLayout) findViewById(R.id.recordsAddTile);
         recordsCreateReportTile = (LinearLayout) findViewById(R.id.recordsCreateReportTile);
-        addRecordMaterial = (MaterialCardView) findViewById(R.id.addRecordMaterial);
-        createReportMaterial = (MaterialCardView) findViewById(R.id.createReportMaterial);
         recordsRecycler = (RecyclerView) findViewById(R.id.recordsRecycler);
 
         recordsRecycler.setHasFixedSize(true);

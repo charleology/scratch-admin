@@ -70,7 +70,6 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginBottom="15dp"
                 android:backgroundTint="@color/lightgray"
                 android:foreground="@drawable/ic_round_camera_alt_24"
                 android:foregroundGravity="center"
@@ -91,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_weight="1.05"
+            android:layout_weight="1.055"
             android:orientation="vertical">
 
             <TextView
@@ -106,7 +105,7 @@
             <com.google.android.material.chip.ChipGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:saveEnabled="true"
                 app:selectionRequired="true"
                 app:singleLine="true"
@@ -142,7 +141,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_weight="1.05"
+            android:layout_weight="1.055"
             android:orientation="vertical">
 
             <TextView
@@ -157,7 +156,7 @@
             <com.google.android.material.chip.ChipGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:saveEnabled="true"
                 app:selectionRequired="true"
                 app:singleLine="true"
@@ -193,7 +192,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_weight="1.05"
+            android:layout_weight="1.055"
             android:orientation="vertical">
 
             <TextView
@@ -208,7 +207,7 @@
             <com.google.android.material.chip.ChipGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:saveEnabled="true"
                 app:selectionRequired="true"
                 app:singleLine="true"
@@ -256,7 +255,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="0.95"
             android:orientation="vertical">
 
             <TextView
@@ -273,7 +272,7 @@
                 android:layout_height="wrap_content"
                 android:saveEnabled="true"
                 app:selectionRequired="true"
-                app:singleLine="true">
+                app:singleLine="false">
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/editBlackChip"
@@ -308,15 +307,6 @@
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-            </com.google.android.material.chip.ChipGroup>
-
-            <com.google.android.material.chip.ChipGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:saveEnabled="true"
-                app:selectionRequired="true"
-                app:singleLine="true">
-
                 <com.google.android.material.chip.Chip
                     android:id="@+id/editWhiteChip"
                     style="@style/My_Widget.MaterialComponents.Chip.Choice"
@@ -339,6 +329,16 @@
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/editOGrayChip"
+                    style="@style/My_Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:text="GRAY"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
             </com.google.android.material.chip.ChipGroup>
 
@@ -349,7 +349,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="8.1"
+        android:layout_weight="8.2"
         android:gravity="center"
         android:orientation="vertical">
 
