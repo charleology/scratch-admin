@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 
 public class AddRecord extends AppCompatActivity {
 
     ImageView addRecordPicIv, addRecordBackIv;
     Button saveRecordBtn;
+    Chip addDogChip, addCatChip, addPuppyChip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,23 @@ public class AddRecord extends AppCompatActivity {
         addRecordBackIv = (ImageView) findViewById(R.id.addRecordBackIv);
         addRecordPicIv = (ImageView) findViewById(R.id.addRecordPicIv);
         saveRecordBtn = (Button) findViewById(R.id.saveRecordBtn);
+        addDogChip = (Chip) findViewById(R.id.addDogChip);
+        addCatChip = (Chip) findViewById(R.id.addCatChip);
+        addPuppyChip = (Chip) findViewById(R.id.addPuppyChip);
+
+        addDogChip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addPuppyChip.setText("PUPPY");
+            }
+        });
+
+        addCatChip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addPuppyChip.setText("KITTEN");
+            }
+        });
     }
 
     public void back(View view){

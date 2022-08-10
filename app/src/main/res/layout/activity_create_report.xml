@@ -66,6 +66,7 @@
             android:layout_marginVertical="10dp">
 
             <LinearLayout
+                android:id="@+id/adoptionRecordsTile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -89,9 +90,10 @@
                     android:gravity="end|bottom">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/icon_messages"/>
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/adoption_icon"
+                        app:tint="@color/pink"/>
 
                 </LinearLayout>
 
@@ -108,6 +110,7 @@
             android:layout_marginVertical="10dp">
 
             <LinearLayout
+                android:id="@+id/userRecordsTile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -122,19 +125,19 @@
                     android:text="USER\nRECORDS"
                     android:textColor="@color/gray"
                     android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical"/>
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="end|center">
+                    android:gravity="end|bottom">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/icon_accounts"/>
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/users_icon"
+                        app:tint="@color/pink" />
 
                 </LinearLayout>
 
@@ -151,6 +154,7 @@
             android:layout_marginVertical="10dp">
 
             <LinearLayout
+                android:id="@+id/petRecordsTile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -165,19 +169,19 @@
                     android:text="PET\nRECORDS"
                     android:textColor="@color/gray"
                     android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical"/>
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="end|center">
+                    android:gravity="end|bottom">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/icon_request"/>
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pet_icon"
+                        app:tint="@color/pink" />
 
                 </LinearLayout>
 
@@ -194,6 +198,7 @@
             android:layout_marginVertical="10dp">
 
             <LinearLayout
+                android:id="@+id/logsTile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -208,19 +213,19 @@
                     android:text="LOG"
                     android:textColor="@color/gray"
                     android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical"/>
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="end|center">
+                    android:gravity="end|bottom">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/icon_records"/>
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/logs_icon"
+                        app:tint="@color/pink" />
 
                 </LinearLayout>
 
