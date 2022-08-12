@@ -7,11 +7,16 @@
     android:orientation="vertical"
     tools:context=".ManageAccount">
 
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        style="@style/CustomCardViewStyle"
+        android:backgroundTint="@color/pink">
     <LinearLayout
         android:id="@+id/pinkHeader"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/pink"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingStart="15dp"
@@ -46,6 +51,8 @@
             android:onClick="onCreateAccountPressed"/>
 
     </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
         android:layout_width="match_parent"
