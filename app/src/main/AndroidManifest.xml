@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Scratchadmin"
         tools:targetApi="31">
         <activity
+            android:name=".RequestInformation"
+            android:exported="false" />
+        <activity
             android:name=".CreateReport"
             android:exported="false" />
         <activity

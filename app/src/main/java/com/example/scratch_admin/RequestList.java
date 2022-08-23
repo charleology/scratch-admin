@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -53,6 +54,11 @@ public class RequestList extends AppCompatActivity {
                 onBackPressed();
             }
         });
+    }
+
+    public void onRequestPressed(View view){
+        Intent i = new Intent(RequestList.this, RequestInformation.class);
+        startActivity(i);
     }
 
     public void back(View view){

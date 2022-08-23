@@ -40,11 +40,11 @@
     </LinearLayout>
 
     <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardViewStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
-        android:backgroundTint="@color/darkerNighty"
-        app:cardCornerRadius="20dp">
+        android:backgroundTint="@color/darkerNighty">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,8 +57,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.25"
                 android:orientation="horizontal"
-                android:paddingHorizontal="15dp"
-                android:paddingTop="15dp"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
                 android:weightSum="2">
 
                 <LinearLayout
@@ -262,7 +262,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.75"
                 android:orientation="horizontal"
-                android:paddingHorizontal="15dp"
+                android:paddingHorizontal="10dp"
                 android:paddingBottom="15dp">
 
                 <com.google.android.material.card.MaterialCardView
