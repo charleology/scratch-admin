@@ -79,4 +79,9 @@ public class ManageRecords extends AppCompatActivity {
         Intent i = new Intent(ManageRecords.this,CreateReport.class);
         startActivity(i);
     }
+
+    public void onRecordsClicked(View view){
+        InformationDialog informationDialog = new InformationDialog(ManageRecords.this);
+        informationDialog.show();
+    }
 }
