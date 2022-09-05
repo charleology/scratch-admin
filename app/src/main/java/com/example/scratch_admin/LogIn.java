@@ -50,6 +50,8 @@ public class LogIn extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent (LogIn.this, Dashboard.class);
                 startActivity(i);
+                //AppointmentReqDialog appointmentReqDialog =  new AppointmentReqDialog(LogIn.this, "Ehem ehem");
+                //appointmentReqDialog.show();
             }
         });
     }
