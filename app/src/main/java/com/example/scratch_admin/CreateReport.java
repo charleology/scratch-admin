@@ -2,6 +2,7 @@ package com.example.scratch_admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -40,5 +41,20 @@ public class CreateReport extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         this.finish();
+    }
+
+    public void onAdoptionRecordsPressed(View view){
+        Intent i = new Intent(CreateReport.this, AdoptionRecords.class);
+        startActivity(i);
+    }
+
+    public void onUserRecordsPressed(View view){
+        Intent i = new Intent(CreateReport.this, UserRecords.class);
+        startActivity(i);
+    }
+
+    public void onPetRecordsPressed(View view){
+        Intent i = new Intent(CreateReport.this, PetRecords.class);
+        startActivity(i);
     }
 }

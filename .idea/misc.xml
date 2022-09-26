@@ -26,6 +26,11 @@
         <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/information_dialog.xml" value="0.20964912280701756" />
         <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/records_item_list.xml" value="0.1" />
         <entry key="..\:/Users/cnbelano/AndroidStudioProjects/scratchadmin/app/src/main/res/layout/requests_item_list.xml" value="0.21052631578947367" />
+        <entry key="..\:/Users/cnbelano/StudioProjects/scratch-admin/app/src/main/res/layout/activity_adoption_records.xml" value="0.1" />
+        <entry key="..\:/Users/cnbelano/StudioProjects/scratch-admin/app/src/main/res/layout/activity_create_report.xml" value="0.25" />
+        <entry key="..\:/Users/cnbelano/StudioProjects/scratch-admin/app/src/main/res/layout/activity_manage_records.xml" value="0.25" />
+        <entry key="..\:/Users/cnbelano/StudioProjects/scratch-admin/app/src/main/res/layout/activity_pet_records.xml" value="0.1" />
+        <entry key="..\:/Users/cnbelano/StudioProjects/scratch-admin/app/src/main/res/layout/activity_user_records.xml" value="0.1" />
       </map>
     </option>
   </component>
